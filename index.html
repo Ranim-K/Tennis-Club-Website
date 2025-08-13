@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call_made">
+    <script src="./js/script.js" defer></script>
+    <title>Tennis Club</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-links">
+                <h1>Horizon Courts</h1>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Coaches</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <button class="book">
+                    Book now
+                    <span class="material-symbols-outlined">call_made</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <h2>Unleash Your Inner Champion Today.<br>All in One Place.</h2>
+                <p>Join the ultimate tennis experience - where passion meets performance.<br>and every swing brings you closer to victory.</p>
+                <button>Start your own journey</button>
+            </div>
+            <div class="hero-footer">
+                <p>Train with real professionals<br>Got the real results.</p>
+                <img src="/assets/fav.png" alt="Coaches">
+            </div>
+        </section>
+        <section class="about">
+            <div class="about-nav">
+                <div class="about-title">About Horizon</div>
+                <p>At Horizon, we don't just play tennis - we live it. Since 2021,<br>our club has been a home for players of all levels, from eager<br> beginners to seasoed pros.</p>
+            </div>
+            <div class="about-cards">
+                <div class="mode">
+                    <img src="/assets/tennis-court.png" alt="Tennis Court" style="width: 50px; height: 50px; color:white;">
+                    <p>Professional hard courts<br><span class="card-highlight">with tournament-grade<br>lighting & climate control - <br> play in</span> perfect conditions,<br>in any season.</p>
+                    <div class="toggle-container">
+                        <input type="checkbox" id="gameModeToggle" class="box">
+                        <label for="gameModeToggle">Game Mode</label>
+                    </div>
+                </div>
+                <div class="private">
+                    <div class="private-title">
+                        Private & Group Lessons
+                    </div>
+                </div>
+                <div class="rating">
+                    <div class="info">
+                        <h1>100+</h1>
+                        <h3>Pro Coaches</h3>
+                        <p>Certified professionals ready to boost your<br>game from first serve to touranment level</p>
+                    </div>
+                    <div class="levels">
+                        <div class="level">
+                            <span>Beginner</span>
+                            <div class="dots">
+                                <span></span><span></span><span></span><span></span><span></span>
+                                <span></span><span></span><span></span><span></span><span></span>
+                                <span></span>
+                            </div>
+                            <span class="number">55</span>
+                        </div>
+                        <div class="level">
+                            <span>Intermediate</span>
+                            <div class="dots">
+                                <span></span><span></span><span></span><span></span><span></span>
+                                <span></span><span></span><span></span><span></span>
+                            </div>
+                            <span class="number">40</span>
+                        </div>
+                        <div class="level">
+                            <span>Advanced</span>
+                            <div class="dots">
+                                <span></span><span></span><span></span><span></span><span></span>
+                                <span></span><span></span>
+                            </div>
+                            <span class="number">35</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-footer">
+                <div class="head">
+                    A few more facts about us in numbers
+                </div>
+                <div class="facts">
+                    <div class="hours">
+                        <h1>12 000+</h1>
+                        <p>Hours of play annually</p>
+                    </div>
+                    <div class="rate">
+                        <h1>89%</h1>
+                        <p>Player Retention Rate</p>
+                    </div>
+                    <div class="members">
+                        <h1>1,200+</h1>
+                        <p>Active Members</p>
+                    </div>
+                    <div class="anual">
+                        <h1>125+</h1>
+                        <p>Annual Tournaments</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="parts">
+                <div class="part1">
+                    <h6>Services</h6>
+                    <p>Explore our full range of coaching,<br>training, and tennis experiences. From<br>first serve to match point - we've<br>got the right program for you</p>
+                    <button class="explore">
+                        Explore More
+                        <span class="material-symbols-outlined">call_made</span>
+                    </button>
+                </div>
+                <div class="part2">
+                    <div class="private-title">Training Programs</div>
+                    <div class="services-footer">
+                        <p>Programs designed for<br>all ages and abilitis.</p>
+                        <div class="services-button"><span class="material-symbols-outlined" id="services-button">call_made</span></div>
+                    </div>
+                </div>
+                <div class="part3">
+                    <div class="hourly">
+                        <p>Hourly Court Rental</p>
+                    </div>
+                    <p class="part3-p">Step into a space built for<br>players - to grow, compete,<br>and thrive.</p>
+                    <div class="part3-buttons">
+                        <button class="arrow-btn">&#8592;</button>
+                        <button class="arrow-btn">&#8594;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
