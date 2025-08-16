@@ -451,3 +451,235 @@ input[type="checkbox"].box:checked:before {
 .arrow-btn:hover {
     background-color: var(--light-gray);
 }
+
+.plans {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 160px;
+    padding: 40px;
+    background-color: var(--frost);
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.price-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--sky); 
+    color: var(--white);
+    border-radius: 20px;
+    padding: 25px;
+    width: fit-content;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.plan-title {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+
+.price1 h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.feature {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+
+.explore {
+    background-color: #0d1a2d;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    border: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.explore:hover {
+    opacity: 0.9;
+}
+
+
+.price2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.money {
+    text-align: right;
+}
+
+.month {
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 3px;
+}
+
+
+.basic-plan,
+.Elite-Plan {
+    background-color: var(--frost);
+    color: var(--slate);
+    border-radius: 15px;
+    padding: 18px;
+    width: 680px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+
+.basic-plan button,
+.Elite-Plan button {
+    background-color: var(--slate);
+    color: var(--white);
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+
+.tit1 {
+    width: fit-content;
+    border: 1px var(--midnight) solid;
+    padding: 5px;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+
+.prices-titles h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.prices-titles p {
+    color: var(--slate);
+    font-size: 25px;
+}
+.review-titles {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 20px;
+}
+
+.review-left {
+    display: flex;
+    flex-direction: column; /* stack title + text */
+}
+
+.review-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    font-weight: 300;
+}
+
+.thereview {
+    font-size: 30px;
+    margin: 0; /* remove default p gap */
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 70px;
+}
+
+.outof {
+    font-size: 18px;
+    color: var(--slate);
+}
+
+.review {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.counter-image {
+    border-radius: 55px;
+    width: 70%;
+    margin-right: 10%; 
+}
+
+
+.switches {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;    
+}
+
+.switches-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} 
+
+.switches-titles h2{
+    font-size: 40px;
+}
+
+.switches-titles p{
+    font-size: 25px;
+    color: var(--slate);
+}
+
+.switches-buttons {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 150px; 
+}
+
+.switch-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; 
+  border: none;
+  background: transparent;
+  color: var(--sky);
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.switch-btn.right {
+  background: var(--sky);
+  color: white;
+}
