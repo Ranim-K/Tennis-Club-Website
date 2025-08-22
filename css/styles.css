@@ -683,3 +683,30 @@ input[type="checkbox"].box:checked:before {
   background: var(--sky);
   color: white;
 }
+
+.faq-titles {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.faq-titles h6 {
+    font-size: 18px;
+    color: var(--slate);
+}
+
+.faq-titles p {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.faq-container {
+    display: flex;
+}
+
+.faq-container img {
+    border-radius: 100px;
+    height: 80%;
+    width: 700px;
+    padding: 50px;
+}
