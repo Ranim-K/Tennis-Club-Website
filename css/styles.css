@@ -901,3 +901,9 @@ footer {
     font-size: 100px;
     white-space: nowrap;
 }
+
+.bottomfooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
