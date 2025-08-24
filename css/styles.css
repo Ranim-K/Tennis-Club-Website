@@ -773,3 +773,131 @@ input[type="checkbox"].box:checked:before {
 .touch:hover {
     opacity: 0.9;
 }
+
+.email {
+    width: 95%;
+    height: 400px;
+    padding: 50px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 50px;
+    background-image: url(../assets/Tennis-bg.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+.email h1 {
+    color: var(--white);
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.email-box {
+  display: flex;
+  align-items: center;
+  background-color: var(--midnight);
+  border-radius: 50px;
+  padding: 5px;
+  width: fit-content;
+}
+
+.email-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--white);
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.email-box input::placeholder {
+  color: var(--slate);
+}
+
+.email-btn {
+  border: none;
+  background: var(--sky);
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+footer {
+    background-color: var(--midnight);
+    color: var(--white); 
+}
+
+.footer1 {
+    display: flex;
+    gap: 150px;
+    padding: 60px;
+}
+
+.footerone {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.footerone button {
+    width: fit-content;
+}
+
+.footerone p {
+    font-size: 30px;
+}
+
+.footertwo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footertwo h6 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.socials {
+    display: flex;
+    gap: 25px;
+}
+
+.social {
+    padding: 8px 20px 8px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: var(--white);
+}
+
+.footer2 {
+    display: flex;
+    gap: 250px;
+    padding: 60px;
+}
+
+.footerfour {
+    display: flex;
+    gap: 50px;
+}
+
+.about, .Contact {
+    line-height: 2;
+}
+
+.about li, .Contact li {
+    list-style-type: none;
+}
+
+.footerthree h1 {
+    font-size: 100px;
+    white-space: nowrap;
+}
