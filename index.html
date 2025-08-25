@@ -19,11 +19,11 @@
                     ☰
                 </button>
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Coaches</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#coaches">Coaches</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contacts</a></li>
                 </ul>
                 <button class="book">
                     Book now
@@ -44,7 +44,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="about-nav">
                 <div class="about-title">About Horizon</div>
                 <p>At Horizon, we don't just play tennis - we live it. Since 2021,<br>our club has been a home for players of all levels, from eager<br> beginners to seasoed pros.</p>
@@ -122,7 +122,7 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="parts">
                 <div class="part1">
                     <h6>Services</h6>
@@ -151,9 +151,9 @@
                 </div>
             </div>
         </section>
-        <section class="plans">
+        <section class="plans" id="plans">
             <div class="prices">
-                <div class="price-card">
+                <div class="price-card" data-plan="pro">
                     <div class="price1">
                         <div class="plan-title">Most Popular Plan</div>
                         <h1>Pro Membership</h1>
@@ -172,15 +172,15 @@
                         <div class="money">120$<span class="month">/month</span></div>
                     </div>
                 </div>
-                <div class="basic-plan">
+                <div class="basic-plan" data-plan="basic">
                     <div class="basic-title">Basic Plan</div>
                     <button class="explore">
                     View Features
                         <span class="material-symbols-outlined">call_made</span>
                     </button>
                 </div>
-                <div class="Elite-Plan">
-                    <div class="elite-title">Basic Plan</div>
+                <div class="Elite-Plan" data-plan="elite">
+                    <div class="elite-title">Elite Plan</div>
                     <button class="explore">
                     View Features
                         <span class="material-symbols-outlined">call_made</span>
@@ -193,7 +193,7 @@
                 <p>Personalized benefits. Premium<br>experience. One decision away.</p>
             </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="coaches">
             <div class="review-titles">
                 <div class="review-left">
                     <div class="review-title">Feel Our Rythym</div>
@@ -218,64 +218,86 @@
                 </div>
             </div>
         </section>
-        <section class="faq">
+        <section class="faq" id="faq">
             <div class="faq-titles">
                 <h6>FAQ</h6>
                 <p>We've gathered the most frequently asked questions in one<br>place. Find clear answers so nothing is left unclear.</p>
             </div>
+
             <div class="faq-container">
                 <img src="./assets/female.png" alt="tennis player">
+
                 <div class="questions">
+
                     <div class="question">
-                    <div class="text">What's the best membership for casual players?</div>
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
-                            <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
-                        </svg>
+                        <div class="text" data-answer="The Casual membership is perfect for occasional players, offering flexible schedules and lower fees.">
+                            What's the best membership for casual players?
+                        </div>
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
+                                <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
+                            </svg>
+                        </div>
                     </div>
-                </div> 
-                <div class="question">
-                    <div class="text">What's the best membership for casual players?</div>
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
-                            <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
-                        </svg>
+
+                    <div class="question">
+                        <div class="text" data-answer="The Pro membership is ideal for serious players who train regularly and want full access to courts and coaching.">
+                            What's the best membership for professional players?
+                        </div>
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
+                                <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
+                            </svg>
+                        </div>
                     </div>
-                </div> 
-                <div class="question">
-                    <div class="text">What's the best membership for casual players?</div>
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
-                            <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
-                        </svg>
+
+                    <div class="question">
+                        <div class="text" data-answer="Elite membership includes personal coaching, tournament access, and premium amenities for competitive players.">
+                            What's the Elite membership?
+                        </div>
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
+                                <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
+                            </svg>
+                        </div>
                     </div>
-                </div> 
-                <div class="question">
-                    <div class="text">What's the best membership for casual players?</div>
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
-                            <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
-                        </svg>
+
+                    <div class="question">
+                        <div class="text" data-answer="You can switch your membership at any time by contacting our support team.">
+                            Can I switch my membership?
+                        </div>
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
+                                <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
+                            </svg>
+                        </div>
                     </div>
-                </div> 
-                <div class="question">
-                    <div class="text">What's the best membership for casual players?</div>
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
-                            <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
-                        </svg>
+
+                    <div class="question">
+                        <div class="text" data-answer="Yes! All memberships include access to locker rooms, showers, and basic equipment.">
+                            Do memberships include access to equipment?
+                        </div>
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
+                                <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
+                            </svg>
+                        </div>
                     </div>
-                </div> 
-                <div class="question">
-                    <div class="text">What's the best membership for casual players?</div>
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
-                            <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
-                        </svg>
+
+                    <div class="question">
+                        <div class="text" data-answer="Our membership plans are billed monthly, with discounts available for annual subscriptions.">
+                            How are memberships billed?
+                        </div>
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
+                                <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/>
+                            </svg>
+                        </div>
                     </div>
-                </div> 
+
                 </div>
             </div>
+
             <div class="faq-footer">
                 <div>Still have some questions?</div>
                 <button class="touch">
@@ -284,7 +306,8 @@
                 </button>
             </div>
         </section>
-        <section class="email">
+
+        <section class="email" id="contact">
             <div class="plan-title" style="color: white; font-size: 18px; width: 100px;">Join Now</div>
             <h1>Get the Latest Upadates, Special Offers,<br>and Exclusive Event Invitations</h1>
             <div class="email-box">
@@ -309,10 +332,18 @@
             <div class="footertwo">
                 <h6>Follow us</h6>
                 <div class="socials">
-                    <button class="social">instagram</button>
-                    <button class="social">Facebook</button>
-                    <button class="social">Tik Tok</button>
-                    <button class="social">Youtube</button>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <button class="social"  style="cursor: pointer;">Youtube</button>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <button class="social"  style="cursor: pointer;">Instagram</button>
+                    </a>
+                    <a href="https://www.tiktok.com" target="_blank">
+                        <button class="social"  style="cursor: pointer;">Tik Tok</button>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <button class="social"  style="cursor: pointer;">Facebook</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -324,11 +355,12 @@
             <div class="footerfour">
                 <div class="about">
                     <h4 style="color: #637186;">About</h4>
-                    <ul>
-                        <li>Services</li>
-                        <li>Coaches</li>
-                        <li>Events</li>
-                        <li>Membership</li>
+                    <ul class="footerfour-li">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#coaches">Coaches</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contacts</a></li>
                     </ul>
                 </div>
                 <div class="Contact">
@@ -346,5 +378,6 @@
             <div>Privacy Policy</div>
         </div>
     </footer>
+    <button id="topBtn" title="Go to top">↑</button>
 </body>
 </html>

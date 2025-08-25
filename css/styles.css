@@ -11,6 +11,9 @@
     --midnight: #0d1a2d;
     --sky: #2eb2ff;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "Urbanist", sans-serif;
@@ -400,6 +403,11 @@ input[type="checkbox"].box:checked:before {
     background-color: #0d1a2d9e;
     padding: 15px;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.services-button:hover {
+    background-color: #0d1a2d26;
 }
 
 .part3 {
@@ -419,6 +427,7 @@ input[type="checkbox"].box:checked:before {
     border-radius: 25px;
     background-image: url(/assets/balls.png);
     background-size: cover;
+    background-position: center;
     position: relative;
 }
 
@@ -642,15 +651,19 @@ input[type="checkbox"].box:checked:before {
 
 .counter-image {
     border-radius: 55px;
-    width: 70%;
-    margin-right: 10%; 
+    width: 400px;  /* fixed width */
+    height: 400px; /* fixed height */
+    object-fit: cover; /* keeps aspect ratio while filling the box */
+    margin-right: 10%;
 }
+
 
 
 .switches {
     display: flex;
     justify-content: space-between;
-    margin-top: 15%;    
+    margin-top: 15%; 
+    margin-right: 10%;   
 }
 
 .switches-titles {
@@ -766,6 +779,27 @@ input[type="checkbox"].box:checked:before {
 .faq-footer div {
     font-size: 18px;
     color: var(--midnight);
+}
+
+.question .text::after {
+    content: attr(data-answer);
+    display: none;
+    margin-top: 10px;
+    font-weight: 400;
+    color: var(--slate);
+}
+
+.question.active .text::after {
+    display: block;
+}
+
+.answer {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .touch {
@@ -906,6 +940,17 @@ footer {
 
 .about li, .Contact li {
     list-style-type: none;
+    color: var(--white);
+}
+
+.footerfour-li a {
+    text-decoration: none; 
+    color: var(--white);        
+    transition: color 0.3s; 
+}
+
+.footerfour-li a:hover {
+    color: #fff; 
 }
 
 .footerthree h1 {
@@ -919,3 +964,27 @@ footer {
     padding: 50px;
 }
 
+#topBtn {
+    display: none; 
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 100;
+    border: none;
+    outline: none;
+    background-color: var(--sky);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#topBtn:hover {
+    background-color: var(--midnight);
+    transform: scale(1.1);
+}
