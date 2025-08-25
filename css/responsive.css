@@ -389,7 +389,7 @@ html, body {
   }
 }
 
-/* ============= TABLET ============= */
+/* =============== TABLET ============= */
 @media (min-width: 769px) and (max-width: 1200px) {
   .nav-links ul {
     gap: 40px;
