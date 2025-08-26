@@ -62,7 +62,7 @@ const reviews = [
     stars: "⭐⭐⭐⭐⭐ 5",
     name: "Skylar Bennett",
     role: "Amateur Champion",
-    image: "./assets/female.png"
+    image: "C:\Users\Ranim\Desktop\Coding\Tennis Club\assets\female.png"
   },
   {
     title: "Unmatched Coaching",
