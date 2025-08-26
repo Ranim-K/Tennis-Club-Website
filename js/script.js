@@ -17,17 +17,17 @@ const part3Items = [
   {
     title: "Hourly Court Rental",
     text: "Step into a space built for players - to grow, compete, and thrive.",
-    img: "./assets/balls.png"
+    img: "../assets/balls.png"
   },
   {
     title: "Private Coaching",
     text: "One-on-one lessons designed to elevate your skills fast.",
-    img: "./assets/court2.jpg"
+    img: "../assets/court2.jpg"
   },
   {
     title: "Group Training",
     text: "Train with friends and meet new players while improving together.",
-    img: "./assets/court3.jpg"
+    img: "../assets/court3.jpg"
   }
 ];
 
@@ -62,7 +62,7 @@ const reviews = [
     stars: "⭐⭐⭐⭐⭐ 5",
     name: "Skylar Bennett",
     role: "Amateur Champion",
-    image: "./assets/female.png"
+    image: "../assets/female.png"
   },
   {
     title: "Unmatched Coaching",
@@ -70,7 +70,7 @@ const reviews = [
     stars: "⭐⭐⭐⭐⭐ 5",
     name: "John Doe",
     role: "Professional Player",
-    image: "./assets/male.png"
+    image: "../assets/male.png"
   },
   {
     title: "Friendly Environment",
@@ -78,7 +78,7 @@ const reviews = [
     stars: "⭐⭐⭐⭐ 4",
     name: "Emma Watson",
     role: "Hobbyist",
-    image: "./assets/female2.png"
+    image: "../assets/female2.png"
   }
 ];
 
