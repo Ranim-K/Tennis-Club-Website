@@ -17,7 +17,7 @@ const part3Items = [
   {
     title: "Hourly Court Rental",
     text: "Step into a space built for players - to grow, compete, and thrive.",
-    img: "../assets/balls.png"
+    img: "./assets/balls.png"
   },
   {
     title: "Private Coaching",
@@ -78,7 +78,7 @@ const reviews = [
     stars: "⭐⭐⭐⭐ 4",
     name: "Emma Watson",
     role: "Hobbyist",
-    image: "../assets/female2.png"
+    image: "./assets/female2.png"
   }
 ];
 
