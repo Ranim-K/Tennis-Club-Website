@@ -22,12 +22,12 @@ const part3Items = [
   {
     title: "Private Coaching",
     text: "One-on-one lessons designed to elevate your skills fast.",
-    img: "../assets/court2.jpg"
+    img: "./assets/court2.jpg"
   },
   {
     title: "Group Training",
     text: "Train with friends and meet new players while improving together.",
-    img: "../assets/court3.jpg"
+    img: "./assets/court3.jpg"
   }
 ];
 
@@ -70,7 +70,7 @@ const reviews = [
     stars: "⭐⭐⭐⭐⭐ 5",
     name: "John Doe",
     role: "Professional Player",
-    image: "../assets/male.png"
+    image: "./assets/male.png"
   },
   {
     title: "Friendly Environment",
