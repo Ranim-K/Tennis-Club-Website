@@ -988,3 +988,27 @@ footer {
     background-color: var(--midnight);
     transform: scale(1.1);
 }
+
+.bottomfooter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    font-size: 35px;      /* Big text */
+    font-weight: 500;
+    color: var(--slate);
+    line-height: 1.6;     /* Better spacing between lines */
+    flex-direction: column; /* Ensures stacked layout if needed */
+}
+
+.bottomfooter a {
+    color: var(--sky);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.bottomfooter a:hover {
+    text-decoration: underline;
+    color: var(--midnight); /* Subtle hover effect */
+}
